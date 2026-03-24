@@ -3,14 +3,6 @@
   "buildCommand": "npm install --prefix backend && npm run prisma:generate --prefix backend && npm run build --prefix frontend",
   "outputDirectory": "frontend/.next",
   "framework": "nextjs",
-  "env": {
-    "DATABASE_URL": {
-      "description": "PostgreSQL connection string for the database"
-    },
-    "NEXT_PUBLIC_GRAPHQL_URL": {
-      "description": "GraphQL endpoint URL (e.g., https://your-domain.vercel.app/graphql)"
-    }
-  },
   "functions": {
     "api/**/*.ts": {
       "runtime": "nodejs20.x"
